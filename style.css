@@ -13,23 +13,26 @@ body{
     align-items: center;
     min-height:100vh;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-line-height: 1.5em;
     font-size: 1em;
     color: white;
     font-weight: 400;
 }
 
+
+main{
+    box-sizing: border-box;
+    min-width: 600px;
+    z-index: 1;
+    margin: 1em;
+}
 .card{
     background-color:hsl(244, 38%, 16%);
     display: flex;
     flex-direction: row;
     border-radius: 10px;
     justify-content: space-between;
-    max-width: 1000px;
 }
-.card img{
-    height: 100px;
-}
+
 
 .text{
     display: flex;
@@ -47,18 +50,45 @@ line-height: 1.5em;
     
 }
 .text span{
-    color: hsl(277, 64%, 61%)
-;
+    color: hsl(277, 64%, 61%);
 }
 
+.text p{
+    color: hsla(0, 0%, 100%, 0.75);
+    line-height: 1.5em;
+    margin-bottom: 5em;
+}
 .img
 {
-  
-    border-radius: 0 10px 0 0;
-    background: url(images/image-header-desktop.jpg) no-repeat;
-    background-size: cover;
-    min-height: 10em;
-    overflow: hidden;
+      min-height: 10em;
     width: 540px;
     min-width: 200px;
+    background: url(images/image-header-desktop.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 0 10px 10px 0;
+    overflow: hidden;
+}
+
+
+.subscription{
+
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+    letter-spacing: 1px;
+}
+
+.subscription> span{
+flex-direction: column;
+}
+
+h2 {
+    display: block;
+    font-size: 1.5em;
+    margin-block-start: 0.83em;
+    margin-block-end: 0.83em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
 }
