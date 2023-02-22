@@ -100,6 +100,7 @@ main{
     max-width: 100%;
     display: block;
     
+    
 }
 
 
@@ -121,4 +122,16 @@ h2{
     margin-bottom: 0.75em;
 }
 
+.img::after {
+ background-color: #550081;
+  border-radius:  0 10px 10px 0;
+  content: '';
+  height: 32.875rem;
+  opacity: .4;
+  position: absolute;
+  width: 533px;
+  min-height: 10em;
+  margin-right: 0em;
+  margin-left: 0rem;
+}
 
